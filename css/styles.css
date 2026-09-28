@@ -21,6 +21,14 @@ header {
   gap: 15px;
 }
 
+nav a,
+nav a:visited,
+nav a:hover,
+nav a:active {
+    color: white;
+    text-decoration: none;
+}
+
 .logo a {
   color: white;
   text-decoration: none;
@@ -172,9 +180,6 @@ footer img {
   }
 }
 
-
-/* ENLACES TIPO BOTÓN */
-
 .boton-link {
     display: inline-block;
     padding: 10px 20px;
@@ -185,7 +190,6 @@ footer img {
 }
 
 
-/* CARRITO */
 .carrito-placeholder {
     max-width: 600px;
     margin: 30px auto;
@@ -196,7 +200,6 @@ footer img {
 }
 
 
-/* WHATSAPP */
 
 .whatsapp-link {
     display: block;
