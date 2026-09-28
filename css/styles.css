@@ -185,9 +185,7 @@ footer img {
 }
 
 
-/* CONTACTO RÁPIDO Y CARRITO */
-
-.contacto-rapido,
+/* CARRITO */
 .carrito-placeholder {
     max-width: 600px;
     margin: 30px auto;
@@ -195,4 +193,19 @@ footer img {
     background-color: white;
     border: 1px solid #ccc;
     border-radius: 8px;
+}
+
+
+/* WHATSAPP */
+
+.whatsapp-link {
+    display: block;
+    width: 60px;
+    margin: 30px auto 0;
+}
+
+.whatsapp-link img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
