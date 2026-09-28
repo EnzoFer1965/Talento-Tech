@@ -1,44 +1,49 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto - Mi Tienda</title>
-    <link rel="stylesheet" href="../css/styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Contacto - La Tienda</title>
+  </head>
 
+  <body>
     <header>
-        <h1>Contacto</h1>
+      <div class="logo">
+        <a href="../index.html">La Tienda</a>
+      </div>
 
-        <nav>
-            <a href="../index.html">Inicio</a>
-            <a href="contacto.html">Contacto</a>
-        </nav>
+      <nav>
+        <ul class="menu">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <section class="contacto">
-            <h2>Contactanos</h2>
+      <section class="contacto">
+        <h1>Contacto</h1>
+        <p>Completá el formulario y dejanos tu consulta.</p>
 
-            <form action="https://formspree.io/f/TU-CODIGO" method="POST">
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre" required>
+        <form action="https://formspree.io/f/xrpznkpw" method="POST">
+          <label for="nombre">Nombre</label>
+          <input id="nombre" type="text" name="nombre" required />
 
-                <label for="email">Correo electrónico</label>
-                <input type="email" id="email" name="email" required>
+          <label for="email">Correo electrónico</label>
+          <input id="email" type="email" name="email" required />
 
-                <label for="mensaje">Mensaje</label>
-                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="message" rows="6" required></textarea>
 
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
     </main>
 
     <footer>
-        <p>Mi Tienda - 2026</p>
+      <p>Sitio realizado para Talento Tech</p>
+      <img src="../img/whatsapp.png" alt="WhatsApp" />
     </footer>
-
-</body>
+  </body>
 </html>
