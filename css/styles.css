@@ -212,3 +212,11 @@ footer img {
     height: auto;
     display: block;
 }
+
+header nav a:link,
+header nav a:visited,
+header nav a:hover,
+header nav a:active {
+    color: white;
+    text-decoration: none;
+}
