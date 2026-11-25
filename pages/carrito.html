@@ -22,9 +22,9 @@
         <section class="carrito-placeholder">
             <h2>Carrito de compras</h2>
 
-            <p>
-                En esta sección se mostrará el carrito de compras.
-            </p>
+            <ul id="lista-carrito" class="lista-carrito" aria-live="polite"></ul>
+            <p class="resumen-carrito">Total: <strong id="total-carrito">$ 0</strong></p>
+            <button id="vaciar-carrito" type="button">Vaciar carrito</button>
 
             <a class="boton-link" href="../index.html">Volver a productos</a>
         </section>
@@ -41,5 +41,6 @@
     </footer>
 
 
+    <script type="module" src="../js/carrito.js"></script>
 </body>
 </html>

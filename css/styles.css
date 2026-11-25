@@ -220,3 +220,88 @@ header nav a:active {
     color: white;
     text-decoration: none;
 }
+.carrito-placeholder {
+  max-width: 760px;
+  width: 100%;
+}
+
+.lista-carrito {
+  list-style: none;
+  margin: 20px 0;
+  padding: 0;
+}
+
+.item-carrito {
+  display: grid;
+  grid-template-columns: minmax(130px, 1fr) auto auto;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.item-carrito > span:first-child {
+  font-weight: bold;
+}
+
+.item-carrito > span:last-child {
+  font-weight: bold;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.controles-carrito {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.controles-carrito button {
+  padding: 8px 12px;
+}
+
+.resumen-carrito {
+  font-size: 20px;
+  text-align: right;
+  margin: 20px 0;
+}
+
+#vaciar-carrito {
+  margin-right: 12px;
+  margin-bottom: 12px;
+}
+
+#vaciar-carrito:disabled {
+  opacity: .5;
+  cursor: not-allowed;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 3px solid #b67836;
+  outline-offset: 3px;
+}
+
+@media (max-width: 650px) {
+  .item-carrito {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .item-carrito > span:last-child {
+    text-align: left;
+  }
+
+  .resumen-carrito {
+    text-align: left;
+  }
+}
+.carrito-placeholder .boton-link {
+    background-color: #4b2e20;
+    color: white;
+}
+
+.carrito-placeholder .boton-link:hover {
+    background-color: #65402e;
+}

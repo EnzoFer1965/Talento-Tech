@@ -1,3 +1,5 @@
+import { agregarProducto, cantidadTotal } from "./almacenamiento.js";
+
 const contenedor = document.getElementById("catalogo-productos");
 const formatoPrecio = new Intl.NumberFormat("es-AR", {
   style: "currency",
@@ -27,6 +29,11 @@ function crearTarjeta(producto) {
   boton.type = "button";
   boton.textContent = "Agregar al carrito";
 
+  boton.addEventListener("click", () => {
+    if (agregarProducto(producto)) actualizarContador();
+    else alert("No se pudo guardar el carrito.");
+  });
+
   tarjeta.append(imagen, titulo, descripcion, precio, boton);
   return tarjeta;
 }
@@ -55,4 +62,10 @@ async function cargarCatalogo() {
   }
 }
 
+function actualizarContador() {
+  const enlace = document.querySelector('a[href="./pages/carrito.html"]');
+  if (enlace) enlace.textContent = `Carrito (${cantidadTotal()})`;
+}
+
+actualizarContador();
 cargarCatalogo();
