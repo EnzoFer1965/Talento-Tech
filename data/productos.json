@@ -1,0 +1,34 @@
+[
+  {
+    "id": "1",
+    "nombre": "Budín de limón",
+    "descripcion": "Budín artesanal con glaseado de limón.",
+    "precio": 5000,
+    "img": "img/budin.jpg",
+    "alt": "Budín de limón glaseado"
+  },
+  {
+    "id": "2",
+    "nombre": "Croissant",
+    "descripcion": "Croissant crocante y recién horneado.",
+    "precio": 1500,
+    "img": "img/croissant.jpg",
+    "alt": "Croissant artesanal"
+  },
+  {
+    "id": "3",
+    "nombre": "Pancakes",
+    "descripcion": "Pancakes suaves para desayuno o merienda.",
+    "precio": 4500,
+    "img": "img/pancakes.jpg",
+    "alt": "Pancakes servidos"
+  },
+  {
+    "id": "4",
+    "nombre": "Pan casero",
+    "descripcion": "Pan artesanal de masa madre.",
+    "precio": 3000,
+    "img": "img/pan.jpg",
+    "alt": "Pan casero"
+  }
+]
